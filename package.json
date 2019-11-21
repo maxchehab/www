@@ -7,6 +7,12 @@
   "author": "maxchehab <maxchehab@gmail.com>",
   "license": "MIT",
   "private": false,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "yarn run build && next export"
+  },
   "dependencies": {
     "@mdx-js/loader": "1.5.1",
     "@next/mdx": "9.1.4",
