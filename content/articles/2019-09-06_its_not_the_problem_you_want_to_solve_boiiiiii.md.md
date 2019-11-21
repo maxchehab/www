@@ -1,9 +1,6 @@
 ---
-title: A blog post with picture of dog
-date: 2019-09-06T08:28:44.549Z
-thumbnail: /static/img/puppy-and-adult-dog.jpg
+title: a test
+date: 2019-11-20T08:00:00.000Z
+description: description
 ---
-
-## Unfortunately, that's it.
-
-🦮 🐕‍🦺 🐕 🐩
+# this is a test
