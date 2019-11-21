@@ -13,7 +13,7 @@ export default class extends App {
             href="https://fonts.googleapis.com/css?family=Cardo&display=swap"
             rel="stylesheet"
           ></link>
-          <style jsx global>{`
+          <style>{`
             body {
               background: #000;
               font-family: "Cardo", serif;
