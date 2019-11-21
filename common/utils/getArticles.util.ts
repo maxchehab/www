@@ -6,7 +6,7 @@ export default async function getArticles(): Promise<Article[]> {
     .keys()
     .map((relativePath: string) => relativePath.substring(2));
 
-  return Promise.all(
+  return await Promise.all(
     markdownFiles.map(async (path: string) => {
       const markdown = await import(`../../content/articles/${path}`);
       return { ...markdown, slug: path.substring(0, path.length - 3) };
