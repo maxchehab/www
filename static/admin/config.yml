@@ -4,12 +4,13 @@ backend:
 media_folder: static/img
 collections:
   - name: "articles"
-    label: "Articles"
+    label: "Article"
     create: true
+    folder: "content/articles"
     files:
       - label: "Home"
         name: "home"
-        file: "content/index.md"
+        file: "content/articles/index.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Publish Date", name: "date", widget: "datetime" }
