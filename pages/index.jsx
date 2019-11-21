@@ -5,7 +5,6 @@ import getArticles from "../utils/getArticles";
 export default class extends Component {
   static async getInitialProps() {
     const articles = await getArticles();
-    console.log(articles);
 
     return { articles };
   }
