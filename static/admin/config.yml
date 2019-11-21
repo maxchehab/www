@@ -11,9 +11,10 @@ collections:
     name: "articles"
     folder: "content/articles"
     create: true
-    slug: "{{slug}}"
+    slug: "{{custom-slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string", required: true }
+      - { label: "Slug", name: "custom-slug", widget: "string", required: true }
       - {
           label: "Publish Date",
           name: "date",
