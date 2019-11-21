@@ -1,7 +1,12 @@
+import { NextPageContext } from "next";
 import React, { Component } from "react";
 
-export default class extends Component {
-  static async getInitialProps({ query }) {
+interface ArticleProps {
+  article: Article;
+}
+
+export default class Article extends Component<ArticleProps> {
+  static async getInitialProps({ query }: NextPageContext) {
     const { slug } = query;
 
     try {

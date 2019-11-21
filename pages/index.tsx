@@ -1,8 +1,13 @@
 import React, { Component } from "react";
 
-import getArticles from "../utils/getArticles";
+import getArticles from "../common/utils/getArticles.util";
+import Article from "../common/interfaces/article.interface";
 
-export default class extends Component {
+interface HomeProps {
+  articles: Article[];
+}
+
+export default class Home extends Component<HomeProps> {
   static async getInitialProps() {
     const articles = await getArticles();
 
