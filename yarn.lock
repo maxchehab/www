@@ -3648,7 +3648,7 @@ mkdirp@0.5.1, mkdirp@^0.5.0, mkdirp@^0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@*, moment@^2.24.0:
+moment@*, moment@2.24.0:
   version "2.24.0"
   resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
   integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
@@ -6059,6 +6059,13 @@ wide-align@^1.1.0:
   integrity sha512-QGkOQc8XL6Bt5PwnsExKBPuMKBxnGxWWW3fU55Xt4feHozMUhdUMaBCk290qpm/wG5u/RSKzwdAC4i51YigihA==
   dependencies:
     string-width "^1.0.2 || 2"
+
+with-blog@0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/with-blog/-/with-blog-0.0.0.tgz#c22f2ed7312eb0f59d3c9b41c376ea9885689ff4"
+  integrity sha512-qMCP0SiCDj97kHhnZL5Kj7vczZlHQ0BnBe1tSYjioQkWw+8kEfPInT7/+7Piy70JuafLdaqZN3MOCp3z17SMjA==
+  dependencies:
+    frontmatter-markdown-loader "3.1.0"
 
 worker-farm@^1.7.0:
   version "1.7.0"
