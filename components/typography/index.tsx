@@ -6,8 +6,10 @@ export function H1(props: HTMLAttributes<HTMLHeadingElement>) {
       <h1 {...props} />
       <style jsx>{`
         h1 {
-          font-size: 144px;
           color: #ffffff;
+          font-size: 144px;
+          line-height: 144px;
+          margin: 0;
         }
       `}</style>
     </Fragment>

@@ -13,14 +13,31 @@ export function ArticleComponent({ article }: ArticleComponentProps) {
 
   return (
     <Fragment>
-      <Link href={`/${article.slug}`}>
-        <a className={"title"}>{title}</a>
-      </Link>
-      <div className={"description"}>
-        {description}
-        <span className={"date"}>{` ${moment(date).format("MMMM Do")}`}</span>
+      <div className={"article"}>
+        <Link href={`/${article.slug}`}>
+          <a className={"title"}>{title}</a>
+        </Link>
+        <div className={"bottom"}>
+          <div className={"description"}>{description}</div>
+          <span className={"date"}>{moment(date).format("MMMM Do")}</span>
+        </div>
       </div>
       <style jsx>{`
+        .bottom {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top 15px;
+        }
+
+        .article {
+          direction: ltr;
+          display: flex;
+          flex-direction: column;
+          width: 444px;
+          margin-bottom: 20px;
+        }
+
         .title {
           font-family: Cardo;
           font-style: bold;
@@ -30,6 +47,7 @@ export function ArticleComponent({ article }: ArticleComponentProps) {
           color: #ffffff;
           border-bottom: solid 1px #1a1a1a;
           text-decoration: none;
+          width: max-content;
         }
 
         .title:hover,
@@ -38,17 +56,32 @@ export function ArticleComponent({ article }: ArticleComponentProps) {
         }
 
         .description {
-          width: 320px;
-          margin-top: 15px;
+          width: 60%;
           font-size: 19px;
           color: #a8a8a8;
-          margin-bottom: 15px;
         }
 
         .date {
           font-style: italic;
           font-size: 16px;
           color: #686868;
+          align-self: end;
+        }
+
+        @media only screen and (max-width: 806px) {
+          .description {
+            width: 100%;
+          }
+
+          .bottom {
+            flex-direction: column;
+            justify-content: auto;
+          }
+
+          .date {
+            margin-top: 10px;
+            align-self: start;
+          }
         }
       `}</style>
     </Fragment>
